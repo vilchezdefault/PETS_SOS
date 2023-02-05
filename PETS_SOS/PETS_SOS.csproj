@@ -65,7 +65,7 @@
     </Compile>
     <Compile Include="DATA\clPet.cs" />
     <Compile Include="DATA\clReport.cs" />
-    <Compile Include="DATA\clUser.cs" />
+    <Compile Include="DATA\clOwner.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -97,5 +97,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

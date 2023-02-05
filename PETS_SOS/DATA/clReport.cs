@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace PETS_SOS.DATA
-{asd asdasda
-    internal class clReport
+{ 
+	public class clReport
     {
-        #region attributes N builders
+        #region attributes
         private int id_report;
 
 		public int id_report_prop
@@ -49,7 +49,7 @@ namespace PETS_SOS.DATA
 		}
 
 
-        #endregion attributes N builders
+        #endregion attributes 
     }
 
 }
