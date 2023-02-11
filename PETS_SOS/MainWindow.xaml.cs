@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PETS_SOS.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,20 @@ namespace PETS_SOS
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnOwners_Click(object sender, RoutedEventArgs e)
+        {
+            var ventana = new Owner();
+
+            ventana.Show();
+        }
+
+        private void btnPets_Click(object sender, RoutedEventArgs e)
+        {
+            var ventana = new Pet();
+
+            ventana.Show();
         }
     }
 }

@@ -63,6 +63,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Forms\Report.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -79,6 +83,9 @@
     </Compile>
     <Compile Include="Forms\Pet.xaml.cs">
       <DependentUpon>Pet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report.xaml.cs">
+      <DependentUpon>Report.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -113,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="IMGS\logo juan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMGS\powerpuffgirls.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

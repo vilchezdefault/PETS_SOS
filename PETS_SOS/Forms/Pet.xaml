@@ -39,10 +39,11 @@
         <TextBox x:Name="txtID" TextWrapping="Wrap" Text="" Margin="10,305,464,109"/>
         <TextBox x:Name="txtSSecondLastName" TextWrapping="Wrap" Text="" Margin="10,238,464,176"/>
         <TextBox TextWrapping="Wrap" Text="" Margin="10,169,464,245"/>
+        <Label x:Name="lblTitle" Content="Pets Window" Margin="107,-2,400,364" HorizontalContentAlignment="Center" UseLayoutRounding="False" FontFamily="Segoe UI Black" FontSize="24" FontWeight="Bold"/>
 
-        <Image Source="/IMGS/logo juan.png" Margin="343,187,10,84" />
+        <Image Source="/IMGS/logo juan.png" Margin="439,162,11,109" />
         <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="21,385,0,0" VerticalAlignment="Top" Click="Button_Click" Height="33" Width="227"/>
-        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="279,385,0,0" VerticalAlignment="Top" Click="Button_Click" Height="33" Width="227"/>
+        <Button x:Name="btnMainWindow" Content="MainWindow" HorizontalAlignment="Left" Margin="279,385,0,0" VerticalAlignment="Top" Click="Button_Click" Height="33" Width="227"/>
         <Button x:Name="btnIndex" Content="Index" HorizontalAlignment="Left" Margin="550,385,0,0" VerticalAlignment="Top" Click="Button_Click" Height="33" Width="227"/>
 
     </Grid>

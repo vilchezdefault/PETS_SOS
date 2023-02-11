@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PETS_SOS"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" 
+        Height="450" 
+        Width="800"
         
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent">
+    <Grid>
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#B0DAB9"/>
+                    <GradientStop Color="#B0DAB9"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Label x:Name="lblTitle" Content="Main Window" Margin="57,34,57,358" HorizontalContentAlignment="Center" UseLayoutRounding="False" FontFamily="Segoe UI Black" FontSize="24" FontWeight="Bold"/>
+        <Image Source="/IMGS/logo juan.png" Margin="574,165,23,-165" />
+        <Image Source="/IMGS/powerpuffgirls.png" Margin="0,-4,547,-52" />
+
+        <Button x:Name="btnOwners" Content="Owners" Margin="481,110,41,300" Click="btnOwners_Click"/>
+        <Button x:Name="btnPets" Content="Pets" Margin="481,229,41,181" Click="btnPets_Click"/>
+        <Button x:Name="btnReport" Content="Report" Margin="481,169,41,241"/>
     </Grid>
 </Window>

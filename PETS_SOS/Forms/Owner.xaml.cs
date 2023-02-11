@@ -43,16 +43,18 @@ namespace PETS_SOS.Forms
             }
         }
 
-        private void BtnIndex(object sender, RoutedEventArgs e)
+        private void btnMainWindow_Click(object sender, RoutedEventArgs e)
         {
-            var ventana = new Pet();
+            var ventana = new MainWindow();
 
             ventana.Show();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtnPets_Click(object sender, RoutedEventArgs e)
         {
+            var ventana = new Pet();
 
+            ventana.Show();
         }
     }
 }
