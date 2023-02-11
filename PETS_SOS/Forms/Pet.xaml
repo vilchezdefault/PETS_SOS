@@ -13,9 +13,10 @@
         WindowStartupLocation="CenterScreen"
         Background="Transparent">
     <Grid>
-        <Border>
+        <Border Margin="-23,10,23,-10">
             <Border.Background>
-                <LinearGradientBrush>
+                <LinearGradientBrush StartPoint="1.1"
+                                     EndPoint="1.1">
                     <GradientStop Color="#B0DAB9"/>
                     <GradientStop Color="#B0DAB9"/>
                 </LinearGradientBrush>

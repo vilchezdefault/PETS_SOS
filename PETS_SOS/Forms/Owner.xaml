@@ -12,15 +12,19 @@
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         Background="Transparent">
+    <Window.Resources>
+        <Color x:Key="GradientStopColor1">#FF3D824C</Color>
+    </Window.Resources>
     <Grid>
         <Border>
             <Border.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="#B0DAB9"/>
-                    <GradientStop Color="#B0DAB9"/>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF3D824C" Offset="1"/>
+                    <GradientStop Color="#FFDAD299" Offset="0.283"/>
+                    <GradientStop Color="#FFB0DAB9" Offset="0.827"/>
+                    <GradientStop Color="#FE62955E" Offset="0.827"/>
                 </LinearGradientBrush>
             </Border.Background>
-           
         </Border>
         <Label x:Name="lblFirstName" Content="First Name" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361"/>
         <Label x:Name="lblSecondName" Content="Second Name" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361"/>
@@ -38,7 +42,7 @@
         <TextBox x:Name="txtLastName" TextWrapping="Wrap" Text="" Margin="10,169,464,245"/>
         <Button x:Name="btnMainWindow" Content="Main Window" Height="25" Margin="10,382,563,43" Click="btnMainWindow_Click"/>
         <Button x:Name="BtnSave" Content="Save" Height="25" Margin="286,382,287,43"/>
-       
+
 
 
         <Image Source="/IMGS/logo juan.png" Margin="343,187,10,84" />
