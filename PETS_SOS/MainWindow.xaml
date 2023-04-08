@@ -15,18 +15,32 @@
     <Grid>
         <Border>
             <Border.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="#B0DAB9"/>
-                    <GradientStop Color="#B0DAB9"/>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1F1F1F"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFB0DAB9"/>
+                    <GradientStop Color="#FF1F1F1F"/>
+                    <GradientStop Color="#FF1F1F1F"/>
+                    <GradientStop Color="#FFBBDFC3"/>
+                    <GradientStop Color="#FFCDE7D3"/>
+                    <GradientStop Color="#FFD7ECDC"/>
+                    <GradientStop Color="#FFE0F0E4"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="Gainsboro"/>
+                    <GradientStop Color="#FF7C7E80" Offset="0.947"/>
+                    <GradientStop Color="White" Offset="0.243"/>
+                    <GradientStop Color="#FFA79DC8" Offset="0.34"/>
+                    <GradientStop Color="#FFF0EDF9" Offset="0.133"/>
                 </LinearGradientBrush>
             </Border.Background>
+            <Image HorizontalAlignment="Center" Height="419" Margin="0,17,0,0" VerticalAlignment="Top" Width="740" Source="/b7afee9ab6a721751946bd0fbd026bf0.jpg" IsEnabled="False"/>
         </Border>
-        <Label x:Name="lblTitle" Content="Main Window" Margin="57,34,57,358" HorizontalContentAlignment="Center" UseLayoutRounding="False" FontFamily="Segoe UI Black" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="lblTitle" Content="Main Window" Margin="575,33,41,356" HorizontalContentAlignment="Right" UseLayoutRounding="False" FontFamily="Ink Free" FontSize="36" FontWeight="Bold" VerticalContentAlignment="Bottom" Foreground="#FFB7AFAF"/>
         <Image Source="/IMGS/logo juan.png" Margin="574,165,23,-165" />
-        <Image Source="/IMGS/powerpuffgirls.png" Margin="0,-4,547,-52" />
+        <Image Source="/IMGS/powerpuffgirls.png" Margin="7,318,647,10" />
 
         <Button x:Name="btnOwners" Content="Owners" Margin="481,110,41,300" Click="btnOwners_Click"/>
         <Button x:Name="btnPets" Content="Pets" Margin="481,229,41,181" Click="btnPets_Click"/>
-        <Button x:Name="btnReport" Content="Report" Margin="481,169,41,241"/>
+        <Button x:Name="btnReport" Content="Report" Margin="481,170,41,240"/>
     </Grid>
 </Window>

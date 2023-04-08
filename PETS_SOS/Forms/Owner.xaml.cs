@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using PETS_SOS.TOOLS;
 
 namespace PETS_SOS.Forms
 {
@@ -24,24 +25,6 @@ namespace PETS_SOS.Forms
             InitializeComponent();
         }
 
-        private void BtnSave(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                MessageBox.Show(" Número Identificación: " + txtPhoneNumber + "\n" +
-                                " Primer Nombre: " + txtFirstName + "\n" +
-                                " Segundo Nombre: " + txtsecondName.Text + "\n" +
-                                " Primer Apellido: " + txtLastName.Text + "\n" +
-                                " Segundo Apellido: " + txtSecondLastName.Text + "\n" +
-                                " Correo Electrónico: " + txtEmail.Text + "\n" +
-                                " Teléfono Celular: " + txtPhoneNumber.Text + "\n");
-            }
-            catch (Exception ex)
-            {
-                string error = ex.Message;
-                MessageBox.Show(error);
-            }
-        }
 
         private void btnMainWindow_Click(object sender, RoutedEventArgs e)
         {
@@ -56,5 +39,16 @@ namespace PETS_SOS.Forms
 
             ventana.Show();
         }
+
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txt_firstNname_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            TOOLS.clsChs.onlyLetters(e);
+        }
+
     }
 }

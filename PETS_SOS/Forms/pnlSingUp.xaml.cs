@@ -15,18 +15,23 @@ using System.Windows.Shapes;
 namespace PETS_SOS.Forms
 {
     /// <summary>
-    /// Interaction logic for Report.xaml
+    /// Interaction logic for pnlSingUp.xaml
     /// </summary>
-    public partial class Report : Window
+    public partial class pnlSingUp : Window
     {
-        public Report()
+        public pnlSingUp()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnSave_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void txtUsername_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            TOOLS.clsChs.onlyLetters(e);
         }
     }
 }

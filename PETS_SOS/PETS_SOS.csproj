@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,11 +56,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DATABASE\Conn.cs" />
+    <Compile Include="DATABASE\ConnSQL.cs" />
+    <Compile Include="Forms\pnlSingUp.xaml.cs">
+      <DependentUpon>pnlSingUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TOOLS\clsChs.cs" />
+    <Compile Include="TOOLS\clsGlobalValue.cs" />
+    <Compile Include="TOOLS\writeLog.cs" />
     <Page Include="Forms\Owner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Forms\Pet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\pnlSingUp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,6 +136,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="IMGS\powerpuffgirls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BUSINESSLogic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SOURCE\Angel_Zefon_Evangelion-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="b7afee9ab6a721751946bd0fbd026bf0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SOURCE\1up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Forms\1up.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

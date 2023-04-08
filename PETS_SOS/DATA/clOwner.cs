@@ -8,7 +8,7 @@ namespace PETS_SOS.DATA
 {
 	public class clOwner
 	{
-		#region attributes 
+		#region attributtes 
 		private int privateid_user;
 
 		public int privateid_user_prop
@@ -72,10 +72,16 @@ namespace PETS_SOS.DATA
 			get { return phone_number; ; }
 			set { phone_number = value; }
 		}
-		#endregion attributes 
 
-		#region builders
-		public clOwner()
+        private string addBy;
+        private DateTime dateAdd;
+        private string update_by;
+        private DateTime date_update;
+
+        #endregion attributes 
+
+        #region builders
+        public clOwner()
 		{
 			this.privateid_user_prop = 0;
 			this.firstName_prop = "";

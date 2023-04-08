@@ -36,8 +36,6 @@
         <Label x:Name="lblTitle" Content="Reports" Margin="107,-2,400,364" HorizontalContentAlignment="Center" UseLayoutRounding="False" FontFamily="Segoe UI Black" FontSize="24" FontWeight="Bold"/>
 
         <Image Source="/IMGS/logo juan.png" Margin="439,162,11,109" />
-        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="21,385,0,0" VerticalAlignment="Top" Click="Button_Click" Height="33" Width="227"/>
-        <Button x:Name="btnMainWindow" Content="MainWindow" HorizontalAlignment="Left" Margin="279,385,0,0" VerticalAlignment="Top" Click="Button_Click" Height="33" Width="227"/>
 
     </Grid>
 </Window>
