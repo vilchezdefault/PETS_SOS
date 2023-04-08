@@ -24,7 +24,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="122,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" BorderBrush="#FF000106" RenderTransformOrigin="0.5,0.5" PreviewTextInput="txtUsername_PreviewTextInput">
+        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Margin="122,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" BorderBrush="#FF000106" RenderTransformOrigin="0.5,0.5" PreviewTextInput="txtUsername_PreviewTextInput">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -44,17 +44,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="122,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" BorderBrush="Black" Background="{x:Null}">
-            <TextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="4.754"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBox.RenderTransform>
-        </TextBox>
-        <Button x:Name="btnSave" Content="SAVE" HorizontalAlignment="Left" Margin="151,162,0,0" VerticalAlignment="Top" Background="{x:Null}" FontWeight="Bold" FontFamily="Ink Free" FontSize="22" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="btnSave_Click">
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="151,162,0,0" VerticalAlignment="Top" Background="{x:Null}" FontWeight="Bold" FontFamily="Ink Free" FontSize="22" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="btnSave_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -64,6 +54,15 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="121,134,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" Foreground="{x:Null}" BorderBrush="Black">
+            <PasswordBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.277"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </PasswordBox.RenderTransform>
+        </PasswordBox>
     </Grid>
 </Window>

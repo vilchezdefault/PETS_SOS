@@ -56,8 +56,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BUSINESSLogic\dtoUser.cs" />
     <Compile Include="DATABASE\Conn.cs" />
     <Compile Include="DATABASE\ConnSQL.cs" />
+    <Compile Include="DATA\clsUser.cs" />
     <Compile Include="Forms\pnlSingUp.xaml.cs">
       <DependentUpon>pnlSingUp.xaml</DependentUpon>
     </Compile>
@@ -137,9 +139,7 @@
   <ItemGroup>
     <Resource Include="IMGS\powerpuffgirls.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BUSINESSLogic\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="SOURCE\Angel_Zefon_Evangelion-removebg-preview.png" />
   </ItemGroup>

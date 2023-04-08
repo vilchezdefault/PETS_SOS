@@ -39,5 +39,12 @@ namespace PETS_SOS
 
             ventana.Show();
         }
+
+        private void btnUsers_Click(object sender, RoutedEventArgs e)
+        {
+            var ventana = new pnlSingUp();
+
+            ventana.Show();
+        }
     }
 }

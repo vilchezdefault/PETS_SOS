@@ -1,4 +1,7 @@
-﻿using System;
+﻿using PETS_SOS.BUSINESSLogic;
+using PETS_SOS.DATA;
+using PETS_SOS.TOOLS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,14 +27,35 @@ namespace PETS_SOS.Forms
             InitializeComponent();
         }
 
-        private void btnSave_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void txtUsername_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             TOOLS.clsChs.onlyLetters(e);
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtUser.Text.Length > 0 && txtPassword.Password.ToString().Length > 0)
+            {
+                clsUser user = new clsUser(txtUser.Text, txtPassword.Password.ToString());
+
+                //data transfer object DTO que comunica con la base de datos
+                dtoUser usu = new dtoUser();
+                if (usu.RequestLogin(user) == true)
+                {
+                    clsGlobalValue.userLogin = user.UserName_prop;
+                    MainWindow window = new MainWindow();
+                    window.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Something its wrong!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Fill in the fields USERNAME and PASSWORD");
+            }
         }
     }
 }
