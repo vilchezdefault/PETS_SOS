@@ -47,9 +47,12 @@ namespace PETS_SOS.BUSINESSLogic
         {
             try///INSERT INTO PETSOS.dbo.VT_USERS VALUES('yao','1','A','vilchezdefault',GETDATE(),NULL,NULL);
             {
+
+
                 string query = "INSERT INTO PETSOS.dbo.VT_USERS VALUES('" + data.UserName_prop + "', '" + data.Password_prop + "', '" +
                                         data.Status + "', '" + data.Addby + "', '" + data.AddDate + "', null, null);";
                 conn.SQLExecuteCmm(_SQLConnection, query);
+                return true;
             }
             catch (Exception ex)
             {

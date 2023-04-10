@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="TOOLS\clsChs.cs" />
     <Compile Include="TOOLS\clsGlobalValue.cs" />
+    <Compile Include="TOOLS\userLog.cs" />
     <Compile Include="TOOLS\writeLog.cs" />
     <Page Include="Forms\Owner.xaml">
       <SubType>Designer</SubType>

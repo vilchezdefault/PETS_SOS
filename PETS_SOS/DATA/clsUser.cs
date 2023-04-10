@@ -34,6 +34,16 @@ namespace PETS_SOS.DATA
 
         }
 
+        public clsUser(string UserName, string Password,string status,string addby,DateTime addDate)
+        {
+            this.UserName = UserName;
+            this.password = Password;
+            this.status = status;
+            this.addby = addby;
+            this.addDate = addDate;
+
+        }
+
         #endregion constructors
         #region Functioons or procedures
         public string printData()

@@ -18,7 +18,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Image Source="/Forms/1up.jpg" RenderTransformOrigin="0.546,0.499" Margin="-3,10,-4,10" Grid.ColumnSpan="2"/>
-        <Label x:Name="lblUsername" Content="Username:" Margin="130,34,89,0" FontFamily="Ink Free" FontSize="22" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+        <Label x:Name="lblUsername" Content="Username:" Margin="130,36,68,0" FontFamily="Ink Free" FontSize="22" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -28,12 +28,12 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Margin="122,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" BorderBrush="#FF000106" RenderTransformOrigin="0.5,0.5" PreviewTextInput="txtUsername_PreviewTextInput">
+        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Margin="115,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" BorderBrush="#FF000106" RenderTransformOrigin="0.5,0.5" PreviewTextInput="txtUsername_PreviewTextInput">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="6.125"/>
+                    <RotateTransform Angle="5.127"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </TextBox.RenderTransform>

@@ -18,7 +18,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Image Source="/Forms/1up.jpg" RenderTransformOrigin="0.546,0.499" Margin="-3,10,-4,10" Grid.ColumnSpan="2"/>
-        <Label x:Name="lblUsername" Content="Username:" Margin="130,34,89,0" FontFamily="Ink Free" FontSize="22" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+        <Label x:Name="lblUsername" Content="Username:" Margin="130,26,59,0" FontFamily="Ink Free" FontSize="22" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -38,25 +38,65 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button x:Name="btnSave" Content="SAVE" HorizontalAlignment="Left" Margin="152,137,0,0" VerticalAlignment="Top" Background="{x:Null}" FontWeight="Bold" FontFamily="Ink Free" FontSize="22" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="btnSave_Click">
+        <Button x:Name="btnSave" Content="SAVE" HorizontalAlignment="Left" Margin="121,138,0,0" VerticalAlignment="Top" Background="{x:Null}" FontWeight="Bold" FontFamily="Ink Free" FontSize="22" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="btnSave_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="7.145"/>
+                    <RotateTransform Angle="6.014"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="121,119,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" Foreground="{x:Null}" BorderBrush="Black">
-            <PasswordBox.RenderTransform>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="22" Margin="120,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" Background="{x:Null}" BorderBrush="Black" RenderTransformOrigin="0.5,0.5" PreviewTextInput="txtUsername_PreviewTextInput">
+            <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="4.277"/>
+                    <RotateTransform Angle="4.34"/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </PasswordBox.RenderTransform>
-        </PasswordBox>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <CheckBox x:Name="ckStatus" Content="status" Margin="148,174,0,0" FontFamily="Ink Free" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Height="35" Width="103" BorderBrush="Black" Background="{x:Null}" FontSize="22">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.889"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+        <TextBox x:Name="txtUserLog" HorizontalAlignment="Left" Margin="33,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" IsEnabled="False" BorderBrush="{x:Null}" FontFamily="Ink Free" FontSize="22" FontWeight="Bold" Background="{x:Null}" Height="26">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.907"/>
+                    <RotateTransform Angle="-37.895"/>
+                    <TranslateTransform X="0.171" Y="-0.141"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="lblUserlog" Content="user log" HorizontalAlignment="Left" Margin="43,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="Ink Free" FontSize="14" FontWeight="Bold">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-41.474"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="26" Margin="112,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" BorderBrush="Black">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-1.45"/>
+                    <RotateTransform Angle="6.138"/>
+                    <TranslateTransform X="0.122" Y="-1.412"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
     </Grid>
 </Window>
