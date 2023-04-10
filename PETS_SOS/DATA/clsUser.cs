@@ -23,12 +23,15 @@ namespace PETS_SOS.DATA
             this.UserName = "";
             this.password = "";
             
+            
         }
 
         public clsUser(string UserName, string Password)
         {
             this.UserName = UserName;
             this.password = Password;
+            
+
         }
 
         #endregion constructors
@@ -54,25 +57,30 @@ namespace PETS_SOS.DATA
             set { password = value; }
         }
 
-        public String Addby
+        public string Addby
         {
             set { addby = value; }
             get { return addby; }
+        }
+        public string Updateby
+        {
+            set { updateby = value; }
+            get { return updateby; }
         }
         public DateTime AddDate
         {
             set { addDate = value; }
             get { return addDate; }
         }
-        public String Updateby
-        {
-            set { updateby = value; }
-            get { return updateby; }
-        }
-        public DateTime FechaModificacion
+        public DateTime UpdateDate
         {
             set { updateDate = value; }
             get { return updateDate; }
+        }
+        public string Status
+        {
+            set { status = value; }
+            get { return status; }
         }
         #endregion
     }

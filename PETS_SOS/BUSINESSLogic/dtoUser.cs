@@ -1,4 +1,5 @@
-﻿using PETS_SOS.DATA;
+﻿using Microsoft.Win32;
+using PETS_SOS.DATA;
 using PETS_SOS.DATABASE;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,22 @@ namespace PETS_SOS.BUSINESSLogic
             }
             catch (Exception ex)
             {
+                MessageBox.Show("Error: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool saveUser(clsUser data)
+        {
+            try///INSERT INTO PETSOS.dbo.VT_USERS VALUES('yao','1','A','vilchezdefault',GETDATE(),NULL,NULL);
+            {
+                string query = "INSERT INTO PETSOS.dbo.VT_USERS VALUES('" + data.UserName_prop + "', '" + data.Password_prop + "', '" +
+                                        data.Status + "', '" + data.Addby + "', '" + data.AddDate + "', null, null);";
+                conn.SQLExecuteCmm(_SQLConnection, query);
+            }
+            catch (Exception ex)
+            {
+
                 MessageBox.Show("Error: " + ex.Message);
                 return false;
             }

@@ -1,0 +1,40 @@
+﻿<Window x:Class="PETS_SOS.Forms.pnlMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PETS_SOS.Forms"
+        mc:Ignorable="d"
+        Title="pnlMain" Height="500" Width="900">
+    <Grid>
+        <Border Margin="0,0,-28,-45">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1F1F1F"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFB0DAB9"/>
+                    <GradientStop Color="#FF1F1F1F"/>
+                    <GradientStop Color="#FF1F1F1F"/>
+                    <GradientStop Color="#FFBBDFC3"/>
+                    <GradientStop Color="#FFCDE7D3"/>
+                    <GradientStop Color="#FFD7ECDC"/>
+                    <GradientStop Color="#FFE0F0E4"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="Gainsboro"/>
+                    <GradientStop Color="#FF7C7E80" Offset="0.947"/>
+                    <GradientStop Color="White" Offset="0.243"/>
+                    <GradientStop Color="#FFA79DC8" Offset="0.34"/>
+                    <GradientStop Color="#FFF0EDF9" Offset="0.133"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Image HorizontalAlignment="Center" Height="486" Margin="0,17,0,0" VerticalAlignment="Top" Width="908" Source="/b7afee9ab6a721751946bd0fbd026bf0.jpg" IsEnabled="False"/>
+        </Border>
+        <Label x:Name="lblTitle" Content="Main Window" Margin="665,-3,21,392" HorizontalContentAlignment="Right" UseLayoutRounding="False" FontFamily="Ink Free" FontSize="36" FontWeight="Bold" VerticalContentAlignment="Bottom" Foreground="#FFB7AFAF"/>
+        <Image Source="/IMGS/logo juan.png" Margin="-41,10,641,309" />
+        <Image Source="/IMGS/powerpuffgirls.png" Margin="19,328,635,0" />
+
+        <Button x:Name="btnOwners" Content="Owners" Margin="686,242,30,191" Click="btnOwners_Click"/>
+        <Button x:Name="btnPets" Content="Pets" Margin="686,352,30,83" Click="btnPets_Click"/>
+        <Button x:Name="btnReport" Content="Report" Margin="686,298,30,139" Click="btnReport_Click"/>
+    </Grid>
+</Window>

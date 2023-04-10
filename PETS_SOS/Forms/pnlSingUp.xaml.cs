@@ -44,7 +44,7 @@ namespace PETS_SOS.Forms
                 if (usu.RequestLogin(user) == true)
                 {
                     clsGlobalValue.userLogin = user.UserName_prop;
-                    MainWindow window = new MainWindow();
+                    pnlMain window = new pnlMain();
                     window.ShowDialog();
                 }
                 else
@@ -56,6 +56,13 @@ namespace PETS_SOS.Forms
             {
                 MessageBox.Show("Fill in the fields USERNAME and PASSWORD");
             }
+        }
+
+        private void txtSingUp_Click(object sender, RoutedEventArgs e)
+        {
+            var ventana = new pnlSingUp2();
+
+            ventana.Show();
         }
     }
 }
