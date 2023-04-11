@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,9 +26,13 @@ namespace PETS_SOS.Forms
         public pnlSingUp2()
         {
             InitializeComponent();
-            txtUserLog.Text = userLog.userLogd;
+            txtUserLogg.Text = TOOLS.clsGlobalValue.userLogin;
         }
-
+        /// <summary>
+        /// Logic from dto.User to save a new user
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             string status;
@@ -54,12 +59,24 @@ namespace PETS_SOS.Forms
                     MessageBox.Show("Wrong Data!");
 
                 }
+               
+                txtUsername.Text = "";
+                txtPassword.Text="";
+            }
+            else
+            {
+                MessageBox.Show("You need fo fill all spaces");
             }
         }
 
         private void txtUsername_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             TOOLS.clsChs.onlyLetters(e);
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

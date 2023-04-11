@@ -37,38 +37,36 @@
                     <GradientStop Color="#FFF0EDF9" Offset="0.133"/>
                 </LinearGradientBrush>
             </Border.Background>
+            <Image HorizontalAlignment="Center" Height="603" VerticalAlignment="Top" Width="800" Source="/Forms/kidult3.jpg"/>
+
         </Border>
         <TextBox x:Name="txtAddDate" HorizontalAlignment="Left" Height="25" Margin="496,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
         <TextBox x:Name="txtUpdateDate" HorizontalAlignment="Left" Height="25" Margin="496,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
-        <Label x:Name="lblAddBy" Content="Add By:" HorizontalAlignment="Left" Height="20" Margin="364,220,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
-        <Label x:Name="lblAddDate" Content="Add Date:" HorizontalAlignment="Left" Height="20" Margin="496,220,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
-        <Label x:Name="lblUpdateBy" Content="Update By:" HorizontalAlignment="Left" Height="20" Margin="364,265,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
-        <Label x:Name="lblUpdateDate" Content="Update Date:" HorizontalAlignment="Left" Height="20" Margin="496,270,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
+        <Label x:Name="lblAddBy" Content="Add By:" HorizontalAlignment="Left" Height="20" Margin="364,220,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold" Background="#FF3D615F"/>
+        <Label x:Name="lblAddDate" Content="Add Date:" HorizontalAlignment="Left" Height="20" Margin="496,220,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold" Background="#FF3D615F"/>
+        <Label x:Name="lblUpdateBy" Content="Update By:" HorizontalAlignment="Left" Height="20" Margin="364,265,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold" Background="#FF3D615F"/>
+        <Label x:Name="lblUpdateDate" Content="Update Date:" HorizontalAlignment="Left" Height="20" Margin="496,270,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold" Background="#FF3D615F"/>
         <TextBox x:Name="txtAddBy" HorizontalAlignment="Left" Height="25" Margin="364,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
         <TextBox x:Name="txtUpdateBy" HorizontalAlignment="Left" Height="25" Margin="364,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
-        <Label x:Name="lblStatus" Content="Status:" Margin="418,184,276,0" VerticalAlignment="Top" FontFamily="Ink Free" Width="106" FontSize="22" Height="30" HorizontalContentAlignment="Center"/>
-        <CheckBox x:Name="ckStatus" Content="A/I" Margin="524,205,0,0" VerticalAlignment="Top" Height="20" Width="56" RenderTransformOrigin="1.261,1.118" HorizontalAlignment="Left" FontSize="20"/>
-        <Label x:Name="lblFirstName" Content="First Name:" HorizontalAlignment="Left" Margin="13,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361"/>
-        <Label x:Name="lblSecondName" Content="Second Name:" HorizontalAlignment="Left" Margin="9,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361"/>
-        <Label x:Name="lblLastName" Content="Last Name:" HorizontalAlignment="Left" Margin="9,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361"/>
-        <Label x:Name="lblLastNamme" Content="Second Last Name:" HorizontalAlignment="Left" Margin="9,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361"/>
-        <Label x:Name="lblId" Content="ID:" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361"/>
-        <Label x:Name="lblEmail"  Content="Email:" HorizontalAlignment="Left" Margin="448,43,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361"/>
-        <Label x:Name="lblPhone" Content="Phone:" HorizontalAlignment="Left" Margin="449,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361"/>
+        <Label x:Name="lblStatus" Content="Status:" Margin="451,176,254,0" VerticalAlignment="Top" FontFamily="Ink Free" FontSize="20" Height="36" HorizontalContentAlignment="Center" FontWeight="Bold" Foreground="#FFFBFBD4" Background="#FF3D615F"/>
+        <CheckBox x:Name="ckStatus" Content="A/I" Margin="554,177,0,0" VerticalAlignment="Top" Height="20" Width="56" RenderTransformOrigin="1.261,1.118" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="lblFirstName" Content="First Name:" HorizontalAlignment="Left" Margin="9,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361" FontSize="20" FontFamily="Ink Free" Foreground="#FFFBFBD4" FontWeight="Bold" Background="#FF3D615F"/>
+        <Label x:Name="lblSecondName" Content="Second Name:" HorizontalAlignment="Left" Margin="9,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361" FontSize="20" FontWeight="Bold" FontFamily="Ink Free" Background="#FF3D615F" Foreground="#FFFBFBD4"/>
+        <Label x:Name="lblLastName" Content="Last Name:" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361" FontSize="20" FontWeight="Bold" FontFamily="Ink Free" Background="#FF3D615F" Foreground="#FFFBFBD4"/>
+        <Label x:Name="lblLastNamme" Content="Second Last Name:" HorizontalAlignment="Left" Margin="9,228,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361" FontSize="20" FontWeight="Bold" FontFamily="Ink Free" Foreground="#FFFBFBD4" Background="#FF3D615F"/>
+        <Label x:Name="lblId" Content="ID:" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361" FontSize="20" FontWeight="Bold" FontFamily="Ink Free" Foreground="#FFFBFBD4" Background="#FF3D615F"/>
+        <Label x:Name="lblEmail"  Content="Email:" HorizontalAlignment="Left" Margin="449,1,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361" FontSize="20" FontWeight="Bold" FontFamily="Ink Free" BorderBrush="Black" Background="#FF3D615F" Foreground="#FFFBFBD4"/>
+        <Label x:Name="lblPhone" Content="Phone:" HorizontalAlignment="Left" Margin="451,96,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0.361" FontSize="20" FontWeight="Bold" FontFamily="Ink Free" Foreground="#FFFBFBD4" Background="#FF3D615F"/>
         <TextBox x:Name="txtsecondName" TextWrapping="Wrap" Text="" Margin="10,136,464,279" AutomationProperties.Name="txtSecondName"/>
 
         <TextBox x:Name="txtfirstName" TextWrapping="Wrap" Text="" Margin="10,61,464,354" AutomationProperties.Name="txtSecondName"/>
         <TextBox x:Name="txtPhoneNumber" TextWrapping="Wrap" Text="" Margin="451,136,23,279"/>
-        <TextBox x:Name="txtEmail" TextWrapping="Wrap" Text="" Margin="451,69,23,345"/>
+        <TextBox x:Name="txtEmail" TextWrapping="Wrap" Text="" Margin="451,42,23,372"/>
         <TextBox x:Name="txtID" TextWrapping="Wrap" Text="" Margin="9,326,465,88"/>
         <TextBox x:Name="txtSecondLastName" TextWrapping="Wrap" Text="" Margin="10,259,464,155"/>
         <TextBox x:Name="txtLastName" TextWrapping="Wrap" Text="" Margin="10,197,464,217"/>
         <Button x:Name="btnMainWindow" Content="Main Window" Margin="496,327,174,88" Click="btnMainWindow_Click"/>
         <Button x:Name="BtnSave" Content="Save" Margin="340,326,321,88" Click="BtnSave_Click"/>
-
-
-
-        <Image x:Name="img_logo" Source="/IMGS/logo juan.png" Margin="608,240,-4,60" />
 
     </Grid>
 </Window>

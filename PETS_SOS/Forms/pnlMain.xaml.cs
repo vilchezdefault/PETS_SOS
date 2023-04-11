@@ -38,7 +38,7 @@ namespace PETS_SOS.Forms
 
         private void btnPets_Click(object sender, RoutedEventArgs e)
         {
-            var ventana = new pnlSingUp2();
+            var ventana = new Pet();
 
             ventana.Show();
         }

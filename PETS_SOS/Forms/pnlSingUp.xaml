@@ -84,5 +84,8 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
+        <Button x:Name="btnLookInfo" HorizontalAlignment="Left" Margin="214,0,0,0" VerticalAlignment="Center" Height="21" Width="42" Background="#FFDDDDDD" Click="btnLookInfo_Click">
+            <Image Height="16" Width="34" Source="/Forms/lupa.png"/>
+        </Button>
     </Grid>
 </Window>

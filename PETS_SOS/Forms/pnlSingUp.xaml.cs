@@ -4,6 +4,7 @@ using PETS_SOS.TOOLS;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -63,6 +64,14 @@ namespace PETS_SOS.Forms
             var ventana = new pnlSingUp2();
 
             ventana.Show();
+        }
+
+        private void btnLookInfo_Click(object sender, RoutedEventArgs e)
+        {
+            dtoUser userdto = new dtoUser();
+            clsUser user = new clsUser();
+            user.UserName_prop = txtUser.Text;
+            //userdto.lookInfo(txtPassword, user);
         }
     }
 }

@@ -56,6 +56,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BUSINESSLogic\dtoOwner.cs" />
     <Compile Include="BUSINESSLogic\dtoUser.cs" />
     <Compile Include="DATABASE\Conn.cs" />
     <Compile Include="DATABASE\ConnSQL.cs" />
@@ -153,7 +154,9 @@
   <ItemGroup>
     <Resource Include="IMGS\powerpuffgirls.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Forms\1upEx.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="SOURCE\Angel_Zefon_Evangelion-removebg-preview.png" />
   </ItemGroup>
@@ -165,6 +168,26 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Forms\1up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Forms\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Forms\Kidult.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SOURCE\1upEx.jpg" />
+    <Resource Include="SOURCE\b7afee9ab6a721751946bd0fbd026bf0.jpg" />
+    <Resource Include="SOURCE\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Forms\kidult2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Forms\kidult3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Forms\1up22.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
