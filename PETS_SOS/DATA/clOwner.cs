@@ -47,21 +47,37 @@ namespace PETS_SOS.DATA
 			this.email_prop = email;
 			this.phone_number_prop = phone_number;
 		}
-
-        public clOwner(int id_owner , string firstName, string second_name,
-               string last_name, string second_lastanme_prop, 
-               string email, string phone_number, string addby,DateTime dateadd,string status)
+        //save
+        public clOwner( int id_owner, string firstName, string second_name,
+       string last_name, string second_lastanme_prop,
+       string email, string phone_number, string addby, DateTime addDate, string status)
         {
             this.id_owner_prop = id_owner;
             this.firstName_prop = firstName;
+            this.second_name = second_name;
             this.last_name_prop = last_name;
-            this.second_lastname_prop = second_name;
+            this.second_lastname_prop = second_lastanme_prop;
+            this.phone_number_prop = phone_number;
+            this.email_prop = email;        
+            this.addby = addby;
+            this.addDate = addDate;
+            this.status = status;
+        }
+        //update
+        public clOwner(int id,int id_owner, string firstName, string second_name,
+       string last_name, string second_lastanme_prop,
+       string email, string phone_number, string updaby, DateTime updatedate,string status)
+        {
+            this.id_owner_prop = id_owner;
+            this.firstName_prop = firstName;
+            this.second_name = second_name;
+            this.last_name_prop = last_name;
+            this.second_lastname_prop = second_lastanme_prop;
             this.phone_number_prop = phone_number;
             this.email_prop = email;
-            this.addby = addby;
-            this.addDate = DateTime.Now;
+            this.updateby = updaby;
+            this.updateDate = updatedate;
             this.status = status;
-
         }
 
         #endregion constructors

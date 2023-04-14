@@ -57,12 +57,16 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BUSINESSLogic\dtoOwner.cs" />
+    <Compile Include="BUSINESSLogic\dtoPet.cs" />
     <Compile Include="BUSINESSLogic\dtoUser.cs" />
     <Compile Include="DATABASE\Conn.cs" />
     <Compile Include="DATABASE\ConnSQL.cs" />
     <Compile Include="DATA\clsUser.cs" />
     <Compile Include="Forms\pnlMain.xaml.cs">
       <DependentUpon>pnlMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\pnlPet.xaml.cs">
+      <DependentUpon>pnlPet.xaml</DependentUpon>
     </Compile>
     <Compile Include="Forms\pnlSingUp.xaml.cs">
       <DependentUpon>pnlSingUp.xaml</DependentUpon>
@@ -75,17 +79,16 @@
     </Compile>
     <Compile Include="TOOLS\clsChs.cs" />
     <Compile Include="TOOLS\clsGlobalValue.cs" />
-    <Compile Include="TOOLS\userLog.cs" />
     <Compile Include="TOOLS\writeLog.cs" />
     <Page Include="Forms\Owner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\Pet.xaml">
+    <Page Include="Forms\pnlMain.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\pnlMain.xaml">
+    <Page Include="Forms\pnlPet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,9 +113,6 @@
     <Compile Include="DATA\clOwner.cs" />
     <Compile Include="Forms\Owner.xaml.cs">
       <DependentUpon>Owner.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Pet.xaml.cs">
-      <DependentUpon>Pet.xaml</DependentUpon>
     </Compile>
     <Compile Include="Forms\Report.xaml.cs">
       <DependentUpon>Report.xaml</DependentUpon>
@@ -188,6 +188,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Forms\1up22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SOURCE\VT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SOURCE\vtb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Forms\feliz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Forms\feliz %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

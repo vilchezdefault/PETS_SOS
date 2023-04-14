@@ -44,7 +44,7 @@ namespace PETS_SOS.Forms
                 dtoUser usu = new dtoUser();
                 if (usu.RequestLogin(user) == true)
                 {
-                    clsGlobalValue.userLogin = user.UserName_prop;
+                    clsGlobalValue.userLogin = txtUser.Text;
                     pnlMain window = new pnlMain();
                     window.ShowDialog();
                 }

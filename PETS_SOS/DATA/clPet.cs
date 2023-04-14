@@ -10,52 +10,15 @@ namespace PETS_SOS.DATA
     {
         #region attributes 
         private int carnet;
-
-		public int carnet_prop
-		{
-			get { return carnet; }
-			set { carnet = value; }
-		}
-		private string name;
-
-		public string name_prop
-		{
-			get { return name; }
-			set { name = value; }
-		}
-		private char gender;
-
-		public char gender_prop
-        {
-			get { return gender; }
-			set { gender = value; }
-		}
-		private double weight;
-
-		public double weight_prop
-        {
-			get { return weight; }
-			set { weight = value; }
-		}
-
-		private string allergies;
-
-		public string allergies_prop
-        {
-			get { return allergies; }
-			set { allergies = value; }
-		}
-		private int owner;
-
-		public int owner_prop
-		{
-			get { return owner; }
-			set { owner = value; }
-		}
+        private string name;
+        private char gender;
+        private double weight;
+        private string allergies;
+        private int owner;
         #endregion attributes 
 
-        #region builders
-		public clPet()
+        #region constructors
+        public clPet()
 		{
 			this.carnet = 0;
 			this.name_prop = "";
@@ -78,10 +41,10 @@ namespace PETS_SOS.DATA
         }
 
 
-		#endregion builders
+        #endregion constructors
 
-		#region Functions
-		public string printData()
+        #region Functions
+        public string printData()
 		{
 			string data = "";
 			data = "Name" + this.name_prop +
@@ -95,6 +58,43 @@ namespace PETS_SOS.DATA
         }
 
         #endregion Functions
+
+        #region Gets N Sets
+        public int carnet_prop
+        {
+            get { return carnet; }
+            set { carnet = value; }
+        }
+
+        public string name_prop
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public char gender_prop
+        {
+            get { return gender; }
+            set { gender = value; }
+        }
+
+        public double weight_prop
+        {
+            get { return weight; }
+            set { weight = value; }
+        }
+
+        public string allergies_prop
+        {
+            get { return allergies; }
+            set { allergies = value; }
+        }
+        public int owner_prop
+        {
+            get { return owner; }
+            set { owner = value; }
+        }
+        #endregion
     }
 
 }

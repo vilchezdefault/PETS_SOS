@@ -19,27 +19,13 @@
     <Grid>
         <Border Margin="-2,-10,-2,15">
             <Border.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF1F1F1F"/>
-                    <GradientStop Color="White"/>
-                    <GradientStop Color="#FFB0DAB9"/>
-                    <GradientStop Color="#FF1F1F1F"/>
-                    <GradientStop Color="#FF1F1F1F"/>
-                    <GradientStop Color="#FFBBDFC3"/>
-                    <GradientStop Color="#FFCDE7D3"/>
-                    <GradientStop Color="#FFD7ECDC"/>
-                    <GradientStop Color="#FFE0F0E4"/>
-                    <GradientStop Color="White"/>
-                    <GradientStop Color="Gainsboro"/>
-                    <GradientStop Color="#FF7C7E80" Offset="0.947"/>
-                    <GradientStop Color="White" Offset="0.243"/>
-                    <GradientStop Color="#FFA79DC8" Offset="0.34"/>
-                    <GradientStop Color="#FFF0EDF9" Offset="0.133"/>
-                </LinearGradientBrush>
+                <ImageBrush ImageSource="/Forms/kidult3.jpg"/>
             </Border.Background>
-            <Image HorizontalAlignment="Center" Height="603" VerticalAlignment="Top" Width="800" Source="/Forms/kidult3.jpg"/>
+
 
         </Border>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Height="33" Margin="340,367,0,0" VerticalAlignment="Top" Width="144" Click="btnSearch_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Height="33" Margin="498,367,0,0" VerticalAlignment="Top" Width="128" Click="btnUpdate_Click"/>
         <TextBox x:Name="txtAddDate" HorizontalAlignment="Left" Height="25" Margin="496,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
         <TextBox x:Name="txtUpdateDate" HorizontalAlignment="Left" Height="25" Margin="496,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
         <Label x:Name="lblAddBy" Content="Add By:" HorizontalAlignment="Left" Height="20" Margin="364,220,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold" Background="#FF3D615F"/>

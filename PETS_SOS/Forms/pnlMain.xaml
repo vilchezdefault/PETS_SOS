@@ -36,5 +36,7 @@
         <Button x:Name="btnOwners" Content="Owners" Margin="686,242,30,191" Click="btnOwners_Click"/>
         <Button x:Name="btnPets" Content="Pets" Margin="686,352,30,83" Click="btnPets_Click"/>
         <Button x:Name="btnReport" Content="Report" Margin="686,298,30,139" Click="btnReport_Click"/>
+        <Button x:Name="btnExit" Content="Exit" Margin="686,406,30,31" RenderTransformOrigin="-0.005,2.228" Click="btnExit_Click"/>
+        
     </Grid>
 </Window>

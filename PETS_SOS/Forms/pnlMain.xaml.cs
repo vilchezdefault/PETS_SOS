@@ -26,9 +26,9 @@ namespace PETS_SOS.Forms
 
         private void btnOwners_Click(object sender, RoutedEventArgs e)
         {
-            var ventana = new Owner();
+            var window = new Owner();
 
-            ventana.Show();
+            window.Show();
         }
 
         private void btnReport_Click(object sender, RoutedEventArgs e)
@@ -36,16 +36,24 @@ namespace PETS_SOS.Forms
 
         }
 
-        private void btnPets_Click(object sender, RoutedEventArgs e)
-        {
-            var ventana = new Pet();
 
-            ventana.Show();
-        }
 
         private void btnUsers_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btnPets_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new pnlPet();
+
+            window.Show();
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+           
+           
         }
     }
 }

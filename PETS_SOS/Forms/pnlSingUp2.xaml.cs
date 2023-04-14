@@ -47,7 +47,7 @@ namespace PETS_SOS.Forms
                     status = "I";
                 }
 
-                clsUser user = new clsUser(txtUsername.Text, txtPassword.Text, status,userLog.userLogd,DateTime.Now);
+                clsUser user = new clsUser(txtUsername.Text, txtPassword.Text, status, clsGlobalValue.userLogin,DateTime.Now);
 
                 dtoUser userT = new dtoUser();
                 if (userT.saveUser(user) == true)
